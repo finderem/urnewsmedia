@@ -1,0 +1,112 @@
+:root {
+  --main-bg: #ffffff;
+  --header-bg: #1a73e8;
+  --link-hover: #155ab6;
+  --ticker-bg: #ffe0b2;
+  --headline-bg: #f1f3f4;
+  --text-color: #202124;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--main-bg);
+  color: var(--text-color);
+}
+
+header {
+  background: var(--header-bg);
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+header nav a {
+  margin: 0 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+}
+
+.ticker {
+  background: var(--ticker-bg);
+  padding: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.hero-news {
+  position: relative;
+  text-align: left;
+  margin: 16px;
+}
+.hero-news img {
+  width: 100%;
+  border-radius: 8px;
+}
+.hero-text {
+  position: absolute;
+  bottom: 16px;
+  left: 24px;
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.85);
+  padding: 16px;
+  border-radius: 8px;
+}
+.hero-text h2 {
+  margin: 0 0 8px;
+}
+.hero-text a {
+  color: var(--header-bg);
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero-text a:hover {
+  color: var(--link-hover);
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+.news-grid article {
+  background: var(--headline-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.news-grid img {
+  width: 100%;
+  display: block;
+}
+.news-grid h3 {
+  margin: 12px;
+  font-size: 1.1rem;
+}
+.news-grid p {
+  margin: 0 12px 12px;
+}
+.news-grid a {
+  display: block;
+  text-align: right;
+  margin: 0 12px 12px;
+  color: var(--header-bg);
+  text-decoration: none;
+  font-weight: 600;
+}
+.news-grid a:hover {
+  color: var(--link-hover);
+}
+
+footer {
+  background: var(--header-bg);
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 24px;
+}
